@@ -1,5 +1,7 @@
 FROM amazoncorretto:8
 
+EXPOSE 8080
+
 RUN yum install -y git &&\
 git clone https://github.com/docker-hy/material-applications.git &&\
 cd material-applications/spring-example-project &&\
